@@ -43,6 +43,12 @@ header {
   display: none;
 }
 
+@media screen and (max-width: 576px) {
+  header {
+    display: block;
+  }
+}
+
 .header-bar {
   padding: 22px 24px 6px 24px;
   display: flex;

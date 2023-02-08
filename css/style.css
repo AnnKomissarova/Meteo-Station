@@ -143,9 +143,9 @@ header {
 }
 
 .dial-hand {
+  height: 70px;
   position: relative;
   top: 55px;
-
   animation: 10s linear infinite rotate;
   transform-origin: bottom;
 }

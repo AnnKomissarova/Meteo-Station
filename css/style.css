@@ -145,6 +145,19 @@ header {
 .dial-hand {
   position: relative;
   top: 55px;
+
+  animation: 10s linear infinite rotate;
+  transform-origin: bottom;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .dial-hand img {
@@ -157,8 +170,7 @@ header {
 }
 
 .output img {
-  width: 245px;
-  height: 245px;
+  height: 260px;
 }
 
 .value {

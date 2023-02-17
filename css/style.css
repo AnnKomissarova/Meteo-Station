@@ -23,18 +23,6 @@ h2 {
   font-weight: 500;
 }
 
-@media screen and (max-width: 720px) {
-  h2 {
-    font-size: 0.8182rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  h2 {
-    font-size: 0.9091rem;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -64,6 +52,18 @@ header {
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .general-information {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .general-information div {
+    width: 170px;
+  }
 }
 
 .status-bar {
@@ -289,12 +289,13 @@ header {
 .section.active {
   display: block;
 }
+
 /* Tabs end */
 
 .edit-bar {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
   font-size: 0.7273rem;
   bottom: 90px;
@@ -302,6 +303,34 @@ header {
 
 .edit-bar .value {
   font-size: 0.7273rem;
+}
+
+.edit-bar .edit {
+  padding-left: 200px;
+}
+
+@media screen and (max-width: 720px) {
+  .edit-bar .edit {
+    padding-left: 220px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .edit-bar .edit {
+    padding-left: 200px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .edit-bar .edit {
+    padding-left: 170px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .edit-bar .edit {
+    padding-left: 160px;
+  }
 }
 
 .information-blocks {
@@ -406,6 +435,7 @@ header {
 }
 
 @media screen and (max-width: 720px) {
+
   .wind,
   .speed,
   .temp {
@@ -500,6 +530,7 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 /* Toggle end */
 
 footer {
@@ -521,4 +552,470 @@ footer {
   footer {
     display: block;
   }
+}
+
+/* Stations-page start */
+
+.stations-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 720px) {
+  .stations-information {
+    justify-content: center;
+  }
+}
+
+.stations-scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+.station-information {
+  padding: 12px 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.stations {
+  font-weight: 500;
+}
+
+.station-quantity {
+  display: flex;
+  flex-grow: 1;
+  line-height: 28px;
+}
+
+.available-quantity {
+  color: #FF9933;
+  padding-left: 16px;
+}
+
+.total-quantity,
+.delimiter {
+  font-size: 0.7273rem;
+}
+
+.start {
+  color: #0BA649;
+}
+
+.stations {
+  height: 360px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 720px) {
+  .stations {
+    height: 550px;
+  }
+}
+
+#element::-webkit-scrollbar {
+  width: 11px;
+}
+
+#element::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+  border-radius: 8px;
+  height: 88px;
+}
+
+@media screen and (max-width: 720px) {
+  #element::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #element::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.single-station {
+  margin-bottom: 16px;
+}
+
+.station-data {
+  display: flex;
+  flex-direction: column;
+  background: #ECECEC;
+  border: 2px solid #F9F9F9;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+  .station-data {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .station-data {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .station-data {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .station-data {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .station-data {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .station-data {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .station-data {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .station-data {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .station-data {
+    width: 320px;
+  }
+}
+
+.station-top,
+.station-middle,
+.station-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.station-top {
+  background: #D3E8DB;
+  height: 36px;
+  padding: 8px 10px 8px 12px;
+  border-bottom: 2px solid #F9F9F9;
+}
+
+@media screen and (max-width: 720px) {
+  .station-top {
+    background: #f3f3f3;
+  }
+}
+
+.station-top .metres {
+  font-size: 0.7273rem;
+  text-decoration: underline;
+}
+
+.station-top .percents {
+  font-size: 0.7364rem;
+}
+
+.station-top i,
+object {
+  vertical-align: -3px;
+}
+
+.station-top .battery-desc {
+  font-size: 0.6545rem;
+  padding-right: 18px;
+}
+
+@media screen and (max-width: 425px) {
+  .station-top .battery-desc {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+ .station-top .fa-battery-full {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .station-top  .fa-battery-full:before {  
+    vertical-align: 3px;
+  }
+}
+
+.metres-desc {
+  font-size: 0.6364rem;
+}
+
+.station-middle {
+  align-items: center;
+  height: 63px;
+  padding: 8px 11px 7px 13px;
+}
+
+.station-middle .temperature {
+  font-size: 0.7273rem;
+}
+
+.station-middle .pressure {
+  font-size: 0.7273rem;
+}
+
+.station-middle .icon {
+  width: 14px;
+}
+
+.station-bottom {
+  background: #F3F3F3;
+  height: 45px;
+  padding: 8px 133px 8px 101px;
+  border-top: 2px solid #F9F9F9;
+}
+
+.station-bottom .wind-direction {
+  font-size: 1.0909rem;
+}
+
+.station-bottom .wind-speed {
+  font-size: 1.0909rem;
+}
+
+.station-bottom .wind-desc {
+  font-size: 0.5364rem;
+  vertical-align: bottom;
+  padding-right: 68px;
+}
+
+@media screen and (max-width: 850px) {
+  .station-bottom {
+    padding: 8px 90px 8px 90px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .station-bottom {
+    padding: 8px 70px 8px 70px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .station-bottom {
+    padding: 8px 30px 8px 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .station-bottom {
+    padding: 8px 15px 8px 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .station-bottom {
+    padding: 8px 5px 8px 5px;
+  }
+}
+
+.station-bottom .speed-desc {
+  font-size: 0.4545rem;
+  vertical-align: bottom;
+}
+
+.temperature-data {
+  text-align: left;
+}
+
+.dial-data {
+  height: 0;
+}
+
+.small-dial {
+  width: 100px;
+  position: relative;
+  top: 1px;
+}
+
+.small-hand {
+  width: 13px;
+  position: relative;
+  bottom: 50px;
+  left: 62px;
+  z-index: 1;
+  animation: 10s linear infinite rotate;
+  transform-origin: bottom;
+}
+
+.actual-station {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.actual-station .temperature-data{
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .actual-station {
+    position: fixed;
+    bottom: 0;
+    height: 64px;
+    background: #F3F3F3;
+    border: 1px solid #F9F9F9;
+    border-radius: 23px 23px 0px 0px;
+    padding: 0 35px;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .actual-station {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .actual-station .explanation {
+    font-size: 0.7173rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .actual-station .explanation {
+    font-size: 0.6173rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .actual-station i {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .actual-station .icon {
+    width: 20px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .actual-station {
+    padding: 0 10px;
+  }
+}
+
+.actual-indication {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 720px) {
+  .actual-data {
+    height: 0;
+  }
+}
+
+.actual-data .actual-dial {
+  width: 260px;
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .actual-data .actual-dial {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .actual-data .actual-dial {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .actual-data .actual-dial {
+    width: 125px;
+    bottom: 70px;
+    left: 2px;
+  }
+}
+
+.actual-data .actual-hand {
+  width: 33px;
+  position: relative;
+  left: 132px;
+  bottom: 168px;
+  z-index: 1;
+  animation: 10s linear infinite rotate;
+  transform-origin: bottom;
+}
+
+@media screen and (max-width: 900px) {
+  .actual-data .actual-hand {
+    width: 30px;
+    left: 116px;
+    bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .actual-data .actual-hand {
+    width: 26px;
+    left: 104px;
+    bottom: 143px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .actual-data .actual-hand {
+    width: 16px;
+    left: 78px;
+    bottom: 135px;
+  }
+}
+
+.actual-indication .value {
+  font-size: 1.0909rem;
+  font-weight: 500;
+}
+
+.actual-temp-deg,
+.actual-temp-desc,
+.actual-wind-desc {
+  vertical-align: 15px;
+  font-size: 0.6364rem;
+  font-weight: 500;
+}
+
+.temp-desc,
+.temp-deg {
+  font-size: 0.6364rem;
+}
+
+.wind-desc {
+  font-size: 0.4545rem;
 }

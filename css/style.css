@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: local('../fonts/Roboto'), local('../fonts/Roboto-Regular'),
+      url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.eot');
+  src: local('../fonts/Roboto Medium'), local('../fonts/Roboto-Medium'),
+      url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Medium.woff') format('woff'),
+      url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -12,8 +34,28 @@ html {
 }
 
 body {
-  font-family: 'Roboto', Arial, Tahoma, sans-serif;
+  font-family: 'Roboto';
   text-align: center;
+}
+
+body.with-overlay {
+  overflow: hidden;
+}
+
+.body-overlay {
+  display: none;
+}
+
+.body-overlay.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(38, 32, 31, 0.65);
+  z-index: 10;
+  color:  #ffffff;
 }
 
 h2 {
@@ -237,6 +279,109 @@ header {
   font-weight: 500;
   padding-bottom: 4px;
 }
+
+/* Modal start */
+
+.modal{  
+  display: none;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal .modal-dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 12000;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8) !important;
+}
+
+.modal .modal-dialog .modal-content {
+  max-width: 300px;
+  margin: 0 auto;
+  max-height: 560px;
+  border-radius: 16px;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  border: 0;
+  padding: 20px 20px 10px 20px;
+  margin: 0 auto;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 0 20px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.modal .modal-dialog .modal-content .modal-footer {
+  border: 0;
+  border-top: 1.5px solid #E1E1E1;
+  padding: 0;
+  display: block;
+  text-align: right;
+}
+
+.modal .modal-dialog .modal-content .btn-inline .btn {
+  width: 100%;
+  min-height: 58px;
+  font-size: 15px;
+  margin-right: 1px;
+  background: #FFF;
+}
+
+.btn-inline {
+  display: flex;
+}
+
+.btn-inline a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-text-secondary {
+  border-radius: 0 0 0 16px;
+  border-right-color: #E1E1E1;
+  border-right-style: solid;
+  border-right-width: 0.5px;
+}
+
+.btn-text-primary {
+  border-radius: 0 0 16px 0;
+  border-left-color: #E1E1E1;
+  border-left-style: solid;
+  border-left-width: 0.5px;
+}
+
+.btn:hover {
+  background: rgba(210, 208, 208, 0.3) !important;
+}
+
+/* Modal end */
 
 /* Tabs start */
 .tabs {

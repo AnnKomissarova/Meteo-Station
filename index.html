@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/6d9bfec3d1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">   
     <title>FouraUp</title>
 </head>
 
 <body>
+    <span class="body-overlay"></span>
     <header class="header">
         <div class="header-bar">
             <div class="time">9:30</div>
@@ -29,9 +29,27 @@
                 <a href="#">Метеостанции</a>
             </div>
             <div class="menu">
-                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <a href="#"><i class="fa-solid fa-ellipsis-vertical" id="modal-menu"></i></a>
             </div>
         </nav>
+        <div class="modal" id="modal-box">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Dialog title</h2>
+                    </div>
+                    <div class="modal-body">
+                        This is a dialog message
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-inline">
+                            <a href="#" class="btn btn-text-secondary">CLOSE</a>
+                            <a href="#" class="btn btn-text-primary">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="arrows">
             <div class="arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
             <div class="arrow-right"><i class="fa-solid fa-chevron-right"></i></div>

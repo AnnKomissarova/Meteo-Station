@@ -750,7 +750,7 @@ footer {
 }
 
 .stations {
-  height: 360px;
+  height: 210px;
   overflow-y: scroll;
 }
 
@@ -762,12 +762,6 @@ footer {
 
 #element::-webkit-scrollbar {
   width: 11px;
-}
-
-#element::-webkit-scrollbar-thumb {
-  background: #D9D9D9;
-  border-radius: 8px;
-  height: 88px;
 }
 
 @media screen and (max-width: 720px) {
@@ -1002,7 +996,7 @@ object {
 .small-hand {
   width: 13px;
   position: relative;
-  bottom: 50px;
+  bottom: 53px;
   left: 62px;
   z-index: 1;
   animation: 10s linear infinite rotate;
@@ -1085,13 +1079,12 @@ object {
 .actual-data .actual-dial {
   width: 260px;
   position: relative;
-  bottom: 30px;
   right: 20px;
 }
 
 @media screen and (max-width: 900px) {
   .actual-data .actual-dial {
-    width: 230px;
+    width: 210px;
   }
 }
 
@@ -1113,7 +1106,7 @@ object {
   width: 33px;
   position: relative;
   left: 132px;
-  bottom: 168px;
+  bottom: 138px;
   z-index: 1;
   animation: 10s linear infinite rotate;
   transform-origin: bottom;
@@ -1121,9 +1114,9 @@ object {
 
 @media screen and (max-width: 900px) {
   .actual-data .actual-hand {
-    width: 30px;
-    left: 116px;
-    bottom: 150px;
+    width: 26px;
+    left: 106px;
+    bottom: 111px;
   }
 }
 
@@ -1131,7 +1124,7 @@ object {
   .actual-data .actual-hand {
     width: 26px;
     left: 104px;
-    bottom: 143px;
+    bottom: 113px;
   }
 }
 

@@ -1103,10 +1103,10 @@ object {
 }
 
 .actual-data .actual-hand {
-  width: 33px;
+  width: 32px;
   position: relative;
   left: 132px;
-  bottom: 138px;
+  bottom: 141px;
   z-index: 1;
   animation: 10s linear infinite rotate;
   transform-origin: bottom;
@@ -1115,8 +1115,8 @@ object {
 @media screen and (max-width: 900px) {
   .actual-data .actual-hand {
     width: 26px;
-    left: 106px;
-    bottom: 111px;
+    left: 104px;
+    bottom: 115px;
   }
 }
 

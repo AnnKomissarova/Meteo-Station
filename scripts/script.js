@@ -37,3 +37,8 @@ function closeModal() {
 openModalBtn.addEventListener('click', openModal);
 btnClose.addEventListener('click', closeModal);
 btnOK.addEventListener('click', closeModal);
+
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+});

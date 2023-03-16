@@ -709,6 +709,7 @@ footer {
 @media screen and (max-width: 720px) {
   .stations-information {
     justify-content: center;
+    margin-bottom: 110px;
   }
 }
 

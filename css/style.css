@@ -709,7 +709,6 @@ footer {
 @media screen and (max-width: 720px) {
   .stations-information {
     justify-content: center;
-    margin-bottom: 110px;
   }
 }
 
@@ -757,7 +756,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   .stations {
-    height: 350px;
+    height: 380px;
   }
 }
 
@@ -780,12 +779,6 @@ footer {
 .single-station {
   margin-bottom: 16px;
 }
-/* 
-@media screen and (max-width: 720px) {
-  .single-station:last-child {
-    margin-bottom: 120px;
-  }
-} */
 
 .station-data {
   display: flex;

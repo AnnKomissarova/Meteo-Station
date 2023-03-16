@@ -39,6 +39,6 @@ btnClose.addEventListener('click', closeModal);
 btnOK.addEventListener('click', closeModal);
 
 
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-});
+// var swiper = new Swiper(".mySwiper", {
+//   loop: true,
+// });

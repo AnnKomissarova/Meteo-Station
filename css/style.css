@@ -757,7 +757,7 @@ footer {
 @media screen and (max-width: 720px) {
   .stations {
     height: 550px;
-    margin-bottom: 110px;
+    padding-bottom: 110px;
   }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>FouraUp</title>
 </head>
+
 <body>
     <span class="body-overlay"></span>
     <header class="header">
@@ -44,6 +46,83 @@
                             <a href="#" class="btn btn-text-secondary">CLOSE</a>
                             <a href="#" class="btn btn-text-primary">OK</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-menu">
+            <div class="modal-menu-content">
+                <h2>
+                    Настройки приложения
+                </h2>
+                <div class="modal-menu-items">
+                    <div class="modal-menu-item">
+                        <p>
+                            Интервал опроса метеостанции
+                        </p>
+                        <select class="modal-menu-select">
+                            <option>1 секунда</option>
+                            <option>10 секунд</option>
+                            <option>30 секунд</option>
+                            <option>60 секунд</option>
+                        </select>
+                    </div>
+                    <div class="modal-menu-item">
+                        <p>
+                            Единицы измерения давления
+                        </p>
+                        <select class="modal-menu-select">
+                            <option>Миллиметр ртутного столба (мм.рт.ст)</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="modal-menu-item">
+                        <p>
+                            Единицы измерения направления ветра
+                        </p>
+                        <select class="modal-menu-select">
+                            <option>Градусы</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="modal-menu-item">
+                        <p>
+                            Тип компаса
+                        </p>
+                        <select class="modal-menu-select">
+                            <option>Часы</option>
+                            <option>Минуты</option>
+                            <option>Градусы</option>
+                        </select>
+                    </div>
+                    <div class="modal-menu-item">
+                        <p>
+                            Скрывать заголовок на странице метаданных
+                        </p>
+                        <div class="modal-menu-item">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-menu-footer">
+                    <div class="modal-menu-btn">
+                        <a href="#" class="menu-btn btn-save"><i class="fa-regular fa-floppy-disk"></i>Записать</a>
+                        <a href="#" class="menu-btn btn-close"><i class="fa-solid fa-xmark"></i>Закрыть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-settings">
+            <div class="modal-settings-box">
+                <div class="modal-settings-content">
+                    <div class="modal-settings-btn">
+                        <a href="#" class="settings-btn btn-settings">Настройки</a>
+                        <a href="#" class="settings-btn btn-exit">Выход</a>
                     </div>
                 </div>
             </div>
@@ -102,6 +181,29 @@
                     </div>
                 </div>
             </section>
+            <section class="chart-block">
+                <div class="app-chart__canvas">
+                    <div class="chart-information">
+                        <h2>15 ююз</h2>
+                        <span>Порыв: 24 км/ч</span>
+                    </div>
+                    <div class="chart-arrows">
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                        <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                    </div>
+                    <canvas class="chart" id="chart"></canvas>
+                </div>
+            </section>
             <section class="information-bar">
                 <div class="information-blocks">
                     <div class="block temp">
@@ -146,5 +248,8 @@
         <nav><a class="home" href="#"></a></nav>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="scripts/chart.js"></script>
 </body>
+
 </html>

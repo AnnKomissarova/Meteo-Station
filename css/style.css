@@ -1345,7 +1345,7 @@ object {
 /* Chart start */
 
 .chart-block {  
-  display: none;
+  /* display: none; */
   padding: 0 16px 24px;
 }
 
@@ -1378,6 +1378,7 @@ object {
 
 .chart-arrow {
   width: 12px;
+  animation: 10s linear infinite rotate;
 }
 
 .chart-arrows {
@@ -1388,10 +1389,27 @@ object {
 }
 
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
   .chart-block {
     display: block;
   }
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.swiper-slide section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

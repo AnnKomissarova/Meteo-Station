@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/awesome/css/all.css">
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>FouraUp</title>
 </head>
@@ -181,7 +182,7 @@
                     </div>
                 </div>
             </section>
-            <section class="chart-block">
+            <!-- <section class="chart-block">
                 <div class="app-chart__canvas">
                     <div class="chart-information">
                         <h2>15 ююз</h2>
@@ -203,8 +204,8 @@
                     </div>
                     <canvas class="chart" id="chart"></canvas>
                 </div>
-            </section>
-            <section class="information-bar">
+            </section> -->
+            <!-- <section class="information-bar">
                 <div class="information-blocks">
                     <div class="block temp">
                         <div class="icons">
@@ -241,15 +242,92 @@
                         <div class="pressure explanation">Давление</div>
                     </div>
                 </div>
+            </section> -->
+
+
+            <section>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <section class="information-bar">
+                            <div class="information-blocks">
+                                <div class="block temp">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-temperature-three-quarters icon"></i>
+                                        <span class="temperature value">21</span>
+                                    </div>
+                                    <div class="temperature abbreviation">oC</div>
+                                    <div class="temperature explanation">Температура</div>
+                                </div>
+                                <div class="block wind">
+                                    <div class="icons">
+                                        <object class="icon" type="image/svg+xml" data="img/wind-sock.svg" width="24"
+                                            height="18"></object>
+                                        <span class="wind-direction value"> 11-50,0</span>
+                                    </div>
+                                    <div class="wind-direction abbreviation">дел.угл </div>
+                                    <div class="wind-direction explanation">Направление ветра</div>
+                                </div>
+                                <div class="block speed">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-wind icon"></i>
+                                        <span class="wind-speed value">0,8</span>
+                                    </div>
+                                    <div class="wind-speed abbreviation">м/с</div>
+                                    <div class="wind-speed explanation">Скорость ветра</div>
+                                </div>
+                                <div class="block press">
+                                    <div class="icons">
+                                        <object class="icon" type="image/svg+xml" data="img/pressure.svg" width="24"
+                                            height="20"></object>
+                                        <span class="pressure value">560</span>
+                                    </div>
+                                    <div class="pressure abbreviation">мм рт.ст.</div>
+                                    <div class="pressure explanation">Давление</div>
+                                </div>
+                            </div>
+                        </section>
+                      </div>
+                      <div class="swiper-slide">
+                        <section class="chart-block">
+                            <div class="app-chart__canvas">
+                                <div class="chart-information">
+                                    <h2>15 ююз</h2>
+                                    <span>Порыв: 24 км/ч</span>
+                                </div>
+                                <div class="chart-arrows">
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                    <object class="chart-arrow" type="image/svg+xml" data="img/chart-arrow.svg" width="12" height="19"></object>
+                                </div>
+                                <canvas class="chart" id="chart"></canvas>
+                            </div>
+                        </section>
+                      </div>  
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
             </section>
+
+
         </div>
     </main>
     <footer>
         <nav><a class="home" href="#"></a></nav>
-    </footer>
-    <script src="scripts/script.js"></script>
+    </footer>    
+    <script src="scripts/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/node_modules/chart.js/dist/chart.umd.js"></script>
     <script src="scripts/chart.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -39,8 +39,6 @@ const btnOK = document.querySelector(".btn-text-primary")
 // btnOK.addEventListener('click', closeModal);
 
 
-
-
 const modalMenu = document.querySelector(".modal-menu");
 const btnMenuClose = document.querySelector(".btn-close");
 const btnMenuSave = document.querySelector(".btn-save");
@@ -80,3 +78,8 @@ btnMenuSave.addEventListener('click', closeModalMenu);
 btnMenuSettings.addEventListener('click', openModalMenu);
 btnMenuExit.addEventListener('click', closeModalSettings);
 
+new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

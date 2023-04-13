@@ -81,5 +81,8 @@ btnMenuExit.addEventListener('click', closeModalSettings);
 new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
+  simulateTouch: false,
+  touchRatio: 0,
 });

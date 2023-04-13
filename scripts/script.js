@@ -85,4 +85,5 @@ new Swiper(".mySwiper", {
   },
   simulateTouch: false,
   touchRatio: 0,
+  allowTouchMove: false,
 });

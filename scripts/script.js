@@ -90,23 +90,33 @@ new Swiper(".mySwiper", {
 const chart = document.querySelector('.app-chart__canvas');
 const swiperBlock = document.querySelector('.swiper-block');
 
-// установим обработчик на событие двойного клика
-// chart.addEventListener('dblclick', function () {
-//   swiperBlock.classList.toggle('active');
-//   bodyOverlay.classList.toggle('active');
-//   body.classList.toggle('with-overlay');
-// });
-
-// function closeChart() {
-//   swiperBlock.classList.remove('active');
-//   bodyOverlay.classList.remove('active');
-//   body.classList.remove('with-overlay');
-// };
-
-// bodyOverlay.addEventListener('click', closeChart);
-
-chart.ondblclick = function () {
+function openChart() {
   swiperBlock.classList.toggle('active');
   bodyOverlay.classList.toggle('active');
   body.classList.toggle('with-overlay');
 }
+
+function closeChart() {
+  swiperBlock.classList.remove('active');
+  bodyOverlay.classList.remove('active');
+  body.classList.remove('with-overlay');
+};
+
+chart.addEventListener('dblclick', openChart);
+bodyOverlay.addEventListener('click', closeChart);
+
+swiperBlock.addEventListener("touchstart", tapHandler);
+
+var tapedTwice = false;
+
+function tapHandler(event) {
+    if(!tapedTwice) {
+        tapedTwice = true;
+        setTimeout( function() { tapedTwice = false; }, 300 );
+        return false;
+    }
+    event.preventDefault();
+    swiperBlock.classList.toggle('active');
+    bodyOverlay.classList.toggle('active');
+    body.classList.toggle('with-overlay');
+ };

@@ -91,16 +91,22 @@ const chart = document.querySelector('.app-chart__canvas');
 const swiperBlock = document.querySelector('.swiper-block');
 
 // установим обработчик на событие двойного клика
-chart.addEventListener('dblclick', function () {
+// chart.addEventListener('dblclick', function () {
+//   swiperBlock.classList.toggle('active');
+//   bodyOverlay.classList.toggle('active');
+//   body.classList.toggle('with-overlay');
+// });
+
+// function closeChart() {
+//   swiperBlock.classList.remove('active');
+//   bodyOverlay.classList.remove('active');
+//   body.classList.remove('with-overlay');
+// };
+
+// bodyOverlay.addEventListener('click', closeChart);
+
+chart.ondblclick = function () {
   swiperBlock.classList.toggle('active');
   bodyOverlay.classList.toggle('active');
   body.classList.toggle('with-overlay');
-});
-
-function closeChart() {
-  swiperBlock.classList.remove('active');
-  bodyOverlay.classList.remove('active');
-  body.classList.remove('with-overlay');
-};
-
-bodyOverlay.addEventListener('click', closeChart);
+}

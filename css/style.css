@@ -893,6 +893,7 @@ footer {
 @media screen and (max-width: 720px) {
   .stations-information {
     justify-content: center;
+    padding-bottom: 110px;
   }
 }
 

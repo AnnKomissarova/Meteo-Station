@@ -26,6 +26,7 @@ new Swiper(".main-swiper", {
   simulateTouch: false,
   touchRatio: 0,
   allowTouchMove: false,
+  loop: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -100,15 +101,21 @@ const chart = document.querySelector('.app-chart__canvas');
 const chartOverlay = document.querySelector(".chart-overlay");
 const swiperBlock = document.querySelector('.swiper-block');
 const chartBlock = document.querySelector('.chart-block');
+const arrows = document.querySelector('.arrows');
+const informationBar = document.querySelector('.information-bar');
 
 function openChart() {
   swiperBlock.classList.toggle('active');
   chartBlock.classList.toggle('active');
+  arrows.classList.toggle('active');
+  informationBar.classList.toggle('active');
 }
 
 function closeChart() {
   swiperBlock.classList.remove('active');
   chartBlock.classList.remove('active');
+  arrows.classList.remove('active');
+  informationBar.classList.remove('active');
 };
 
 chart.addEventListener('dblclick', openChart);
@@ -127,6 +134,8 @@ function tapHandler(event) {
     event.preventDefault();
     swiperBlock.classList.toggle('active');
     chartBlock.classList.toggle('active');
+    arrows.classList.toggle('active');
+    informationBar.classList.toggle('active');
  };
 
  document.addEventListener( 'click', (e) => {

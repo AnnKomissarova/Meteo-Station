@@ -385,7 +385,7 @@ header {
 
 /* Modal-menu start */
 
-.modal-menu{
+.modal-menu {
   display: none;
 }
 
@@ -399,7 +399,7 @@ header {
   max-height: 400px;
   border-radius: 16px;
   background-color: #FFFFFF;
-  padding: 10px; 
+  padding: 10px;
   position: fixed;
   left: 0;
   top: 100px;
@@ -408,13 +408,13 @@ header {
   z-index: 12000;
 }
 
-.modal-menu-items{  
+.modal-menu-items {
   border-top: 1.5px solid #E1E1E1;
-  border-bottom: 1.5px solid #E1E1E1;  
+  border-bottom: 1.5px solid #E1E1E1;
   text-align: left;
 }
 
-.modal-menu  h2{
+.modal-menu h2 {
   font-size: 0.7rem;
   padding-bottom: 7px;
 }
@@ -428,15 +428,15 @@ header {
   padding: 5px 0;
 }
 
-.modal-menu-footer{
+.modal-menu-footer {
   text-align: right;
 }
 
-.modal-menu-btn{
+.modal-menu-btn {
   padding: 15px;
 }
 
-.modal-menu-btn .menu-btn{
+.modal-menu-btn .menu-btn {
   display: inline-block;
   width: 100px;
   text-align: center;
@@ -445,26 +445,26 @@ header {
   padding: 10px;
 }
 
-.modal-menu-btn i{
- margin-right: 5px;
+.modal-menu-btn i {
+  margin-right: 5px;
 }
 
 .btn-save {
-  border: 1.5px solid #0BA649;  
+  border: 1.5px solid #0BA649;
   margin-right: 5px;
   color: #0BA649;
 }
 
 .btn-save:hover {
-  background:rgb(70, 224, 101, 0.2);
+  background: rgb(70, 224, 101, 0.2);
 }
 
 .btn-close:hover {
-  background:rgb(224, 70, 70, 0.2);
+  background: rgb(224, 70, 70, 0.2);
 }
 
 .btn-close {
-  border: 1.5px solid #f44444; 
+  border: 1.5px solid #f44444;
   color: #f44444;
 }
 
@@ -523,7 +523,7 @@ header {
 
 /* Modal-settings start */
 
-.modal-settings{
+.modal-settings {
   display: none;
 }
 
@@ -545,22 +545,22 @@ header {
   transform: scale(0.8) !important;
 }
 
-.modal-settings .modal-settings-content{
+.modal-settings .modal-settings-content {
   width: 200px;
   margin: 0 auto;
   height: 150px;
   border-radius: 16px;
   background-color: #FFFFFF;
-  padding: 10px; 
+  padding: 10px;
 }
 
-.modal-settings .modal-settings-btn .settings-btn{
+.modal-settings .modal-settings-btn .settings-btn {
   display: block;
-  padding: 20px; 
+  padding: 20px;
 }
 
-.modal-settings .btn-settings{   
-  border-bottom: 1.5px solid #E1E1E1;  
+.modal-settings .btn-settings {
+  border-bottom: 1.5px solid #E1E1E1;
 }
 
 .settings-btn:hover {
@@ -942,7 +942,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   .stations {
-    height: 630px;    
+    height: 630px;
     margin: 0;
   }
 }
@@ -1035,8 +1035,6 @@ footer {
     width: 260px;
   }
 }
-
-
 
 .station-top,
 .station-middle,
@@ -1195,7 +1193,7 @@ object {
   .station-bottom .wind-direction {
     font-size: 0.909rem;
   }
-  
+
   .station-bottom .wind-speed {
     font-size: 0.909rem;
   }
@@ -1205,7 +1203,7 @@ object {
   .station-bottom .wind-direction {
     font-size: 0.709rem;
   }
-  
+
   .station-bottom .wind-speed {
     font-size: 0.709rem;
   }
@@ -1215,7 +1213,7 @@ object {
   .station-bottom .wind-direction {
     font-size: 0.609rem;
   }
-  
+
   .station-bottom .wind-speed {
     font-size: 0.609rem;
   }
@@ -1407,11 +1405,11 @@ object {
 
 /* Chart start */
 
-.chart-block {    
+.chart-block {
   padding: 0 16px 24px;
 }
 
-.chart-block.active {    
+.chart-block.active {
   background: rgba(38, 32, 31, 0.65);
 }
 
@@ -1430,7 +1428,7 @@ object {
   line-height: 0.7;
 }
 
-.chart-information h2{
+.chart-information h2 {
   font-size: 1.0909rem;
   color: #000000;
   padding: 8px 0 0 10px;
@@ -1475,11 +1473,11 @@ object {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
-    background-color: #FF9933;
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  background-color: #FF9933;
 }
 
-.swiper-block.active{
+.swiper-block.active {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1489,15 +1487,16 @@ object {
   z-index: 12000;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-size: 1rem;
   color: #000000;
 }
 
-.arrows.active{
+.arrows.active {
   display: none;
 }
 
-.information-bar.active{
+.information-bar.active {
   background: rgba(38, 32, 31, 0.65);
 }

@@ -1,5 +1,5 @@
-const tabs = document.getElementsByClassName('tab');  
-const sections = document.getElementsByClassName('section'); 
+const tabs = document.getElementsByClassName('tab');
+const sections = document.getElementsByClassName('section');
 
 [...tabs].forEach(tab => tab.addEventListener('click', tabClick));
 
@@ -27,7 +27,7 @@ new Swiper(".main-swiper", {
   touchRatio: 0,
   allowTouchMove: false,
   loop: true,
-  calculateHeight:true,
+  calculateHeight: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -74,7 +74,7 @@ btnMenuExit.addEventListener('click', closeModalSettings);
 
 
 function openModalMenu() {
-  modalMenu.classList.add('active');  
+  modalMenu.classList.add('active');
   modalMenuSettings.classList.remove('active');
   bodyOverlay.classList.add('active');
   body.classList.add('with-overlay');
@@ -127,21 +127,21 @@ swiperBlock.addEventListener("touchstart", tapHandler);
 var tapedTwice = false;
 
 function tapHandler(event) {
-    if(!tapedTwice) {
-        tapedTwice = true;
-        setTimeout( function() { tapedTwice = false; }, 300 );
-        return false;
-    }
-    event.preventDefault();
-    swiperBlock.classList.toggle('active');
-    chartBlock.classList.toggle('active');
-    arrows.classList.toggle('active');
-    informationBar.classList.toggle('active');
- };
+  if (!tapedTwice) {
+    tapedTwice = true;
+    setTimeout(function () { tapedTwice = false; }, 300);
+    return false;
+  }
+  event.preventDefault();
+  swiperBlock.classList.toggle('active');
+  chartBlock.classList.toggle('active');
+  arrows.classList.toggle('active');
+  informationBar.classList.toggle('active');
+};
 
- document.addEventListener( 'click', (e) => {
-	const withinBoundaries = e.composedPath().includes(chart); 
-	if ( ! withinBoundaries ) {
-		closeChart(); 
-	}
+document.addEventListener('click', (e) => {
+  const withinBoundaries = e.composedPath().includes(chart);
+  if (!withinBoundaries) {
+    closeChart();
+  }
 })

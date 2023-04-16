@@ -942,7 +942,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   .stations {
-    height: 630px;
+    height: 350px;
     margin: 0;
   }
 }

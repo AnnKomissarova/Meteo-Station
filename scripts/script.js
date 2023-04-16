@@ -26,8 +26,9 @@ new Swiper(".main-swiper", {
   simulateTouch: false,
   touchRatio: 0,
   allowTouchMove: false,
-  loop: true,
-  calculateHeight: true,
+  loop: true, 
+  autoHeight: true,
+  
 
   navigation: {
     nextEl: ".swiper-button-next",

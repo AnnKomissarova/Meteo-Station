@@ -107,14 +107,12 @@ const informationBar = document.querySelector('.information-bar');
 
 function openChart() {
   swiperBlock.classList.toggle('active');
-  chartBlock.classList.toggle('active');
   arrows.classList.toggle('active');
   informationBar.classList.toggle('active');
 }
 
 function closeChart() {
   swiperBlock.classList.remove('active');
-  chartBlock.classList.remove('active');
   arrows.classList.remove('active');
   informationBar.classList.remove('active');
 };
@@ -134,7 +132,6 @@ function tapHandler(event) {
   }
   event.preventDefault();
   swiperBlock.classList.toggle('active');
-  chartBlock.classList.toggle('active');
   arrows.classList.toggle('active');
   informationBar.classList.toggle('active');
 };

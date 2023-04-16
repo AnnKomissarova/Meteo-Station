@@ -28,7 +28,6 @@ new Swiper(".main-swiper", {
   allowTouchMove: false,
   loop: true, 
   autoHeight: true,
-  
 
   navigation: {
     nextEl: ".swiper-button-next",

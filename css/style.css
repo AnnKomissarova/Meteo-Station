@@ -942,7 +942,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   .stations {
-    height: 350px;
+    height: 400px;
     margin: 0;
   }
 }
@@ -1406,7 +1406,7 @@ object {
 /* Chart start */
 
 .chart-block {
-  padding: 0 16px 24px;
+  padding: 25px;
 }
 
 .chart-block.active {

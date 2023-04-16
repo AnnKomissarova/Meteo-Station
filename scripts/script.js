@@ -26,7 +26,7 @@ new Swiper(".main-swiper", {
   simulateTouch: false,
   touchRatio: 0,
   allowTouchMove: false,
-  loop: true, 
+  loop: true,
   autoHeight: true,
 
   navigation: {
@@ -99,9 +99,7 @@ function closeModalSettings() {
 };
 
 const chart = document.querySelector('.app-chart__canvas');
-const chartOverlay = document.querySelector(".chart-overlay");
 const swiperBlock = document.querySelector('.swiper-block');
-const chartBlock = document.querySelector('.chart-block');
 const arrows = document.querySelector('.arrows');
 const informationBar = document.querySelector('.information-bar');
 
@@ -119,7 +117,6 @@ function closeChart() {
 
 chart.addEventListener('dblclick', openChart);
 bodyOverlay.addEventListener('click', closeChart);
-
 
 swiperBlock.addEventListener("touchstart", tapHandler);
 var tapedTwice = false;

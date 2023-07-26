@@ -117,6 +117,10 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background: #ECECEC;
+  z-index: 1000;
 }
 
 .navigation a {
@@ -932,7 +936,12 @@ footer {
 }
 
 .start {
+  margin-left: 30px;
   color: #0BA649;
+}
+
+.start i {
+  font-size: 25px;
 }
 
 .stations {
@@ -942,7 +951,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   .stations {
-    height: 420px;
+    height: 100vh;
     margin: 0;
   }
 }
@@ -978,61 +987,55 @@ footer {
 
 @media screen and (max-width: 720px) {
   .station-data {
-    width: 600px;
+    width: 650px;
   }
 }
 
 @media screen and (max-width: 675px) {
   .station-data {
-    width: 550px;
+    width: 600px;
   }
 }
 
 @media screen and (max-width: 625px) {
   .station-data {
-    width: 500px;
+    width: 550px;
   }
 }
 
 @media screen and (max-width: 570px) {
   .station-data {
-    width: 450px;
+    width: 500px;
   }
 }
 
 @media screen and (max-width: 520px) {
   .station-data {
-    width: 400px;
+    width: 450px;
   }
 }
 
 @media screen and (max-width: 460px) {
   .station-data {
-    width: 350px;
+    width: 400px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .station-data {
-    width: 310px;
+    width: 360px;
   }
 }
 
 @media screen and (max-width: 380px) {
   .station-data {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .station-data {
     width: 310px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .station-data {
-    width: 280px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .station-data {
-    width: 260px;
   }
 }
 

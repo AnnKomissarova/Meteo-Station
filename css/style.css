@@ -164,7 +164,8 @@ header {
 }
 
 .main-information section {
-  width: calc((100%-16px*2)/2);
+  /*width: calc((100%-16px*2)/2);*/
+  width: calc((100% - 16px * 2) / 2);
 }
 
 .current-meteo {
@@ -892,6 +893,7 @@ footer {
 .stations-information {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: column; */
 }
 
 @media screen and (max-width: 665px) {
@@ -917,6 +919,7 @@ footer {
 .stations {
   font-weight: 500;
   margin-right: 30px;
+  /* margin: 30px 10px 0 20px; */
 }
 
 .station-quantity {

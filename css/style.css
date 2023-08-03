@@ -113,7 +113,7 @@ header {
 }
 
 .navigation {
-  padding: 18px 24px 24px 20px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -142,8 +142,14 @@ header {
   justify-content: space-between;
   color: #737077;
   position: relative;
-  top: 185px;
+  top: 155px;
   height: 0;
+}
+
+@media screen and (max-width: 860px) {
+  .arrows {
+    top: 135px;
+  }
 }
 
 @media screen and (max-width: 665px) {
@@ -223,29 +229,43 @@ header {
 .value {
   color: #FF9933;
   font-size: 1.5455rem;
+  margin-left: 5px;
 }
 
-@media screen and (max-width: 860px) {
+
+@media screen and (max-width: 880px) { 
   .value {
-    font-size: 1.3636rem;
+    font-size: 1.2636rem;
   }
+    
+}
+
+@media screen and (max-width: 860px) { 
+  .output img {
+    height: 250px;
+  }
+
+  .dial-hand img {
+    width: 30px;
+    height: 70px;
+  }
+
+  .dial-hand {
+    height: 71px;
+    top: 48px;
+  }
+    
 }
 
 @media screen and (max-width: 835px) {
   .value {
-    font-size: 1.2727rem;
-  }
-}
-
-@media screen and (max-width: 805px) {
-  .value {
-    font-size: 1.1364rem;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  .value {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .value {
+    font-size: 0.9rem;
   }
 }
 
@@ -644,6 +664,18 @@ header {
   padding-left: 200px;
 }
 
+@media screen and (max-width: 775px) {
+  .edit-bar .edit {
+    padding-left: 160px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .edit-bar .edit {
+    padding-left: 140px;
+  }
+}
+
 @media screen and (max-width: 665px) {
   .edit-bar .edit {
     padding-left: 220px;
@@ -671,7 +703,6 @@ header {
 .information-blocks {
   max-width: 665px;
   margin: 0 auto;
-  padding-top: 21px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -680,7 +711,7 @@ header {
 .information-blocks .block {
   width: calc((100% - 2*16px)/2);
   max-width: 250px;
-  height: 178px;
+  height: 160px;
   background: #F3F3F3;
   text-align: left;
   border: 2px solid #F9F9F9;
@@ -720,6 +751,10 @@ header {
   .information-blocks {
     max-width: 360px;
   }
+
+  .information-blocks .block {
+    height: 140px;
+}
 }
 
 @media screen and (max-width: 835px) {
@@ -782,9 +817,9 @@ header {
   align-items: center;
 }
 
-.icon {
+/* .icon {
   width: 24px;
-}
+} */
 
 .explanation {
   font-size: 0.7173rem;
@@ -1253,10 +1288,11 @@ object {
   width: 100px;
   position: relative;
   top: 1px;
+  right: 5px;
 }
 
 .small-hand {
-  width: 13px;
+  width: 12px;
   position: relative;
   bottom: 53px;
   left: 62px;
@@ -1268,7 +1304,6 @@ object {
 .actual-station {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -1360,7 +1395,7 @@ object {
   .actual-data .actual-dial {
     width: 125px;
     bottom: 70px;
-    left: 2px;
+    right: 5px;
   }
 }
 
@@ -1384,17 +1419,17 @@ object {
 
 @media screen and (max-width: 800px) {
   .actual-data .actual-hand {
-    width: 26px;
-    left: 104px;
-    bottom: 113px;
+    width: 24px;
+    left: 97px;
+    bottom: 109px;
   }
 }
 
 @media screen and (max-width: 665px) {
   .actual-data .actual-hand {
-    width: 16px;
-    left: 78px;
-    bottom: 135px;
+    width: 15px;
+    left: 71px;
+    bottom: 138px;
   }
 }
 
@@ -1421,6 +1456,14 @@ object {
 }
 
 /* Chart start */
+
+.swiper-slide {
+  display: flex;
+}
+
+.swiper-slide section {
+  width: 100%;
+}
 
 .chart-block {
   padding: 25px;
@@ -1487,8 +1530,6 @@ object {
 }
 
 .chart-swipe section {
-  display: flex;
-  align-items: center;
   width: 100%;
   height: 100%;
 }

@@ -69,6 +69,7 @@ Chart.defaults.plugins.legend.display = false;
 // render init block
 const myChart = new Chart(
   document.querySelector('.chart'),
+  document.querySelector('.chart-tablet'),
   config
 );
 

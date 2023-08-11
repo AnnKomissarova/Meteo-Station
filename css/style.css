@@ -163,6 +163,13 @@ header {
   justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .main-information {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 665px) {
   .main-information {
     flex-direction: column;
@@ -181,7 +188,7 @@ header {
   flex-direction: column;
 }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 1200px) {
   .current-meteo {
     max-width: 665px;
   }
@@ -199,7 +206,7 @@ header {
   height: 83px;
   position: relative;
   top: 62px;
-  animation: 10s linear infinite rotate;
+  /* animation: 10s linear infinite rotate; */
   transform-origin: bottom;
 }
 
@@ -233,7 +240,7 @@ header {
 }
 
 
-@media screen and (max-width: 880px) { 
+/* @media screen and (max-width: 880px) { 
   .value {
     font-size: 1.2636rem;
   }
@@ -297,7 +304,7 @@ header {
   .value {
     font-size: 1.1364rem;
   }
-}
+} */
 
 .abbreviation {
   font-size: 0.4545rem;
@@ -729,7 +736,7 @@ header {
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 940px) {
+/* @media screen and (max-width: 940px) {
   .information-blocks {
     max-width: 420px;
   }
@@ -773,7 +780,7 @@ header {
   .information-blocks {
     max-width: 300px;
   }
-}
+} */
 
 @media screen and (max-width: 665px) {
   .information-blocks {
@@ -826,15 +833,15 @@ header {
   line-height: 28px;
 }
 
-@media screen and (max-width: 875px) {
+/* @media screen and (max-width: 875px) {
   .explanation {
     font-size: 0.6364rem;
     line-height: 28px;
   }
-}
+} */
 
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 1200px) {
   .explanation {
     font-size: 0.8182rem;
     line-height: 28px;
@@ -929,6 +936,12 @@ footer {
   display: flex;
   justify-content: space-between;
   /* flex-direction: column; */
+}
+
+@media screen and (max-width: 1200px) {
+  .stations-information {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 665px) {
@@ -1297,7 +1310,7 @@ object {
   bottom: 53px;
   left: 62px;
   z-index: 1;
-  animation: 10s linear infinite rotate;
+  /* animation: 10s linear infinite rotate; */
   transform-origin: bottom;
 }
 
@@ -1367,6 +1380,12 @@ object {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .actual-indication div:first-child{
+    margin-right: 60px;
+  }
+}
+
 @media screen and (max-width: 665px) {
   .actual-data {
     height: 0;
@@ -1379,7 +1398,7 @@ object {
   right: 20px;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .actual-data .actual-dial {
     width: 210px;
   }
@@ -1389,7 +1408,7 @@ object {
   .actual-data .actual-dial {
     width: 200px;
   }
-}
+} */
 
 @media screen and (max-width: 665px) {
   .actual-data .actual-dial {
@@ -1405,11 +1424,11 @@ object {
   left: 132px;
   bottom: 141px;
   z-index: 1;
-  animation: 10s linear infinite rotate;
+  /* animation: 10s linear infinite rotate; */
   transform-origin: bottom;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .actual-data .actual-hand {
     width: 26px;
     left: 104px;
@@ -1423,7 +1442,7 @@ object {
     left: 97px;
     bottom: 109px;
   }
-}
+} */
 
 @media screen and (max-width: 665px) {
   .actual-data .actual-hand {
@@ -1503,7 +1522,7 @@ object {
 
 .chart-arrow {
   width: 12px;
-  animation: 10s linear infinite rotate;
+  /* animation: 10s linear infinite rotate; */
 }
 
 .chart-arrows {
@@ -1563,6 +1582,12 @@ object {
 @media screen and (max-width: 665px) {
   .information-bar.active {
     padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .no-stations {
+    margin-top: 50px;
   }
 }
 
